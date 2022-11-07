@@ -1,0 +1,24 @@
+<p>myc05 works! 管道</p>
+<ul>
+  <li>{{"asdfadsgf" | uppercase}}</li>
+  <li>{{"asdfadsgf  fdgdg" | titlecase}}</li>
+  <li>{{0.22|percent}}</li>
+  <li>{{2542.258258|percent:"2.2"}}</li>
+</ul>
+<hr>
+
+<h3>自定义管道</h3>
+<table border="1">
+
+  <tr>
+    <td>序号</td>
+    <td>姓名</td>
+    <td>性别</td>
+  </tr>
+
+  <tr *ngFor="let person of people; let p = id">
+    <td>{{person.id}}</td>
+    <td>{{person.name}}</td>
+    <td>{{person.sex |gender}}</td>
+  </tr>
+</table>

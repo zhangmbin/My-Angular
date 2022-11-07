@@ -1,0 +1,23 @@
+<p>myc03 works!</p>
+
+<!-- 系统指令 -->
+<!-- *ngIf ---v-if -->
+<div *ngIf="score>=90">优秀</div>
+<div *ngIf="score<=90&&score>=70">良好</div>
+<div *ngIf="score>=60&&score<70">及格 *ngif</div>
+<!-- if-else -->
+
+<ng-container *ngIf="score>=60;else templateName" >
+  <span>及格！！if-eles</span>
+</ng-container>
+<!-- ng提供的快速标记方式，与上面对应 -->
+<ng-template #templateName>
+  <span>不及格！！if-else</span>
+</ng-template>
+
+<div [ngSwitch]="type">
+  <div *ngSwitchCase="1">output1</div>
+  <div *ngSwitchCase="2">output2</div>
+  <div *ngSwitchCase="3">output3</div>
+  <div *ngSwitchDefault>output2</div>
+</div>

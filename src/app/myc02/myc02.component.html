@@ -1,6 +1,39 @@
 <div>
-    <button (click)="addNum">+</button>
-    <p>{{num}}</p>
-    <button (click)="desNum">-</button>
-  </div>
-  
+  <button (click)="addNum()">+</button>
+  <p>{{num}}</p>
+  <button (click)="desNum()">-</button>
+</div>
+
+
+<!-- 属性绑定 -->
+<!-- <input type="text" id=""> -->
+<h3 [title]="names">dsds</h3>
+
+<!-- 可以直接写html结构。相当于innerHTML -->
+<div>{{html}}</div>
+<div [innerHTML]="html"></div>
+
+<!-- 双向数据绑定 -->
+<!-- angular -->
+<div>{{name}}</div>
+<input type="text" [(ngModel)]="name">
+
+<!-- class与style的使用 [ngStyle] -->
+<ul>
+  <!-- 小驼峰或者字符串 -->
+  <li [ngStyle]="{color:'red', 'font-size':size+'px'}">{{size}}</li>
+  <li [ngStyle]="{color:'red',fontSize:size+'px' }">{{size}}</li>
+</ul>
+<!-- [ngclass]支持动态变更样式，格式:"{ 样式名 ：true/false }" true表示生效false反之 -->
+<button (click)="size=size+2"
+[ngClass]="{danger:size>20&&size<30,safe:size>30}"
+>变大</button>
+<!-- 自增 ++ 与 += 不能在html中使用 -->
+
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>

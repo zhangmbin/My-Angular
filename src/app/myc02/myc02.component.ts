@@ -12,14 +12,16 @@ export class Myc02Component implements OnInit {
   ngOnInit(): void {
   }
 
-  num= 0
+  num = 0
+  name = '张三'
+  names = ['zs', 'ls', 'ww', 'jk']
+  html = '<h3>我是张三</h3>'
+  size=17
 
   addNum(): void {
-    console.log(1);
-    
     this.num++
     console.log(this.num);
-    
+
   }
   desNum(): void {
     this.num--
