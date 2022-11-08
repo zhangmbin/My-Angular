@@ -1,0 +1,17 @@
+<p>myc06 works! 组件传值</p>
+<h3>
+  <!-- 字符串的传入格式：name='zmb' -->
+  姓名：{{name}}
+</h3>
+<h4>
+  <!-- 年龄的传入格式：[age]='18' -->
+  年龄：{{age}}
+</h4>
+<div>
+  <h3>老板</h3>
+  <h4>姓名：{{boss.name}}</h4>
+  <h4>年龄：{{boss.age}}</h4>
+  <h4>性别：{{boss.sex}}</h4>
+</div>
+
+<button (click)="msgEvent.emit(msgPost)">子传父</button>

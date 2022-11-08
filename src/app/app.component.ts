@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {//js
   title = 'my-angular';
+  locate='fuzhou'
+
+
+  show(msg){
+    console.log('msg',msg);
+  }
 }

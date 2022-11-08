@@ -13,7 +13,10 @@ import { Myc04Component } from './myc04/myc04.component';
 import { FocusDirective } from './focus.directive';
 import { UpperDirective } from './upper.directive';
 import { Myc05Component } from './myc05/myc05.component';
-import { GenderPipe } from './gender.pipe'; // <-- NgModel lives here
+import { GenderPipe } from './gender.pipe';
+import { Myc06Component } from './myc06/myc06.component';
+import { Myc07TodolistComponent } from './myc07-todolist/myc07-todolist.component';
+import { MessagesComponent } from './messages/messages.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { GenderPipe } from './gender.pipe'; // <-- NgModel lives here
     FocusDirective,
     UpperDirective,
     Myc05Component,
-    GenderPipe
+    GenderPipe,
+    Myc06Component,
+    Myc07TodolistComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
