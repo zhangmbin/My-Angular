@@ -18,10 +18,10 @@ export class HeroesComponent implements OnInit {
   // heroes = HEROES//导入HEROES并赋值
   heroes: Hero[] = [];
 
-  selectedHero?: Hero;//把该组件的 hero 属性改名为 selectedHero，但不要为它赋值。 因为应用刚刚启动时并没有所选英雄(空值)
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // selectedHero?: Hero;//把该组件的 hero 属性改名为 selectedHero，但不要为它赋值。 因为应用刚刚启动时并没有所选英雄(空值)
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
 
   getHeroes(): void {
     // this.heroes = this.heroService.getHeroes();//----同步

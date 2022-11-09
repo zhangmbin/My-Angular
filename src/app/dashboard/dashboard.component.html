@@ -1,0 +1,7 @@
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+    <!-- 插值绑定来把当前迭代的 hero.id 插入到每个 routerLink 中 -->
+  <a *ngFor="let hero of heroes"  routerLink="/detail/{{hero.id}}">
+    {{hero.name}}
+  </a>
+</div>
